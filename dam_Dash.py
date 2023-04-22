@@ -89,13 +89,13 @@ def create_table(n_clicks,q_Str):
     else:
         print('----Error 201----')
         
-    return children ,n_clicks,figure
+    return children ,'',figure
 
 
 app.layout=dbc.Container([
     dbc.Row([my_text1,my_input,my_btn,my_div,my_graph],className='text-center')
 ])
 if __name__=='__main__' :
-    app.run_server(port='8005',debug=True)    #debug=True
+    app.run_server(port='8005')    #debug=True
     
 
